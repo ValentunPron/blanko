@@ -110,12 +110,14 @@ body {
 }
 
 .header {
+  position: fixed;
+  width: 100%;
   background-color: #000;
 }
 
 .header__row {
   display: flex;
-  max-height: 84px;
+  max-height: 81px;
   align-items: center;
 }
 
@@ -176,8 +178,8 @@ body {
   display: block;
   top: 0px;
   right: 0;
-  height: 100%;
-  max-height: 90px;
+  height: 200%;
+  max-height: 88px;
   width: 1px;
   background: rgba(255, 255, 255, 0.16);
 }
@@ -214,10 +216,36 @@ body {
   position: absolute;
   content: "";
   display: block;
-  top: 0px;
+  top: 0;
   left: 0;
-  height: 100%;
-  max-height: 102px;
+  height: 200%;
+  max-height: 88px;
   width: 1px;
   background: rgba(255, 255, 255, 0.16);
+}
+
+@media (max-width: 1148px) {
+  .header__menu {
+    margin-right: 1px;
+  }
+  .header__link {
+    padding-right: 9px;
+  }
+  .info__email {
+    margin-left: 20px;
+  }
+  .info__item {
+    padding: 0px 20px;
+    padding-left: 0px;
+  }
+  .info__logo img {
+    width: 100px;
+  }
+  .action__item {
+    padding: 27.5px 20px;
+  }
+  .button {
+    padding: 10px 25px;
+    font-size: 13px;
+  }
 }
