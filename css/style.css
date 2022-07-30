@@ -104,6 +104,7 @@ a {
 
 .content {
   flex: 1 1 auto;
+  margin-top: 90px;
 }
 
 .container {
@@ -124,7 +125,6 @@ a {
 }
 
 .header__body {
-  max-height: 81px;
   display: flex;
   align-items: center;
 }
@@ -132,7 +132,7 @@ a {
 .header__logo {
   position: relative;
   flex: 0 0 auto;
-  padding: 22px 34px 22px 0;
+  padding: 25px 34px 25px 0;
 }
 
 .header__logo::before {
@@ -210,4 +210,35 @@ a {
 
 .action__button {
   margin-left: 40px;
+}
+
+@media (max-width: 1080px) {
+  .header__logo {
+    padding: 25px 30px 25px 0;
+  }
+  .header__logo img {
+    max-width: 90%;
+  }
+  .header__email {
+    font-size: 14px;
+    margin-left: 30px;
+  }
+  .menu__item + .menu__item {
+    margin-left: 20px;
+  }
+  .menu__line {
+    margin-right: 15px;
+  }
+  .menu__item:last-child {
+    padding-left: 30px;
+  }
+  .menu__link {
+    font-size: 14px;
+  }
+  .action__button {
+    margin-left: 30px;
+  }
+  .button {
+    font-size: 14px;
+  }
 }
