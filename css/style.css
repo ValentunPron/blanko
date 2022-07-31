@@ -775,3 +775,58 @@ a {
     font-size: 10px;
   }
 }
+
+.advantage {
+  margin-top: 65px;
+}
+
+.advantage__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.advantage__item {
+  margin: 15px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.advantage__image {
+  position: relative;
+  z-index: -1;
+  width: 100px;
+  height: 100px;
+  background: #FDE7DA;
+}
+
+.advantage__image img {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.advantage__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.advantage__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.advantage__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 256px;
+}
