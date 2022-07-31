@@ -93,6 +93,12 @@ a {
   color: #000000;
   padding: 12px 32px;
   border-radius: 6px;
+  transition: all 0.3s ease-out;
+}
+
+.button:hover {
+  background-color: #ff4d12;
+  color: #F5F5F5;
 }
 
 .wrapper {
@@ -164,6 +170,11 @@ a {
   color: #F5F5F5;
   padding: 4px 8px;
   z-index: 4;
+  transition: ease .4s all;
+}
+
+.header__email:hover {
+  opacity: 0.75;
 }
 
 .header__menu {
@@ -218,6 +229,11 @@ a {
 .menu__link {
   position: relative;
   padding-right: 12.5px;
+  transition: ease .3s all;
+}
+
+.menu__link:hover {
+  opacity: .75;
 }
 
 .menu__link::before {
