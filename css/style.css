@@ -954,19 +954,50 @@ a {
   }
 }
 
-.slide {
-  margin-top: 50px;
+.slider {
+  margin-top: 73px;
+  margin-bottom: 50px;
 }
 
-.slide__body {
-  height: 200px;
-  width: 100%;
+.slider__body {
+  background-color: #000;
+  color: #fff;
 }
 
-.red {
-  background-color: red;
+.slider__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.black {
-  background-color: black;
+.slider__info {
+  height: 100%;
+  margin: auto auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.slider__image {
+  width: 100px;
+  height: 20px;
+  margin-bottom: 40px;
+}
+
+.slider__text {
+  max-width: 576px;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 41px;
+}
+
+.slider__subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.slider__subtitle span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
