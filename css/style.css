@@ -830,3 +830,125 @@ a {
   line-height: 24px;
   max-width: 256px;
 }
+
+@media (max-width: 1180px) {
+  .advantage {
+    margin-top: 65px;
+  }
+  .advantage__image {
+    width: 90px;
+    height: 90px;
+  }
+  .advantage__image img {
+    width: 48px;
+    height: 48px;
+  }
+  .advantage__title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .advantage__text {
+    font-size: 15px;
+    line-height: 20px;
+    max-width: 226px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .advantage {
+    margin-top: 60px;
+  }
+  .advantage__item {
+    margin: 12.5px auto;
+  }
+  .advantage__image {
+    width: 85px;
+    height: 85px;
+  }
+  .advantage__image img {
+    width: 45px;
+    height: 45px;
+  }
+  .advantage__info {
+    margin-left: 15px;
+  }
+  .advantage__title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .advantage__text {
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 969px) {
+  .advantage {
+    margin-top: 50px;
+  }
+  .advantage__item {
+    margin: 12.5px auto;
+  }
+  .advantage__image {
+    width: 75px;
+    height: 75px;
+  }
+  .advantage__image img {
+    width: 40px;
+    height: 40px;
+  }
+  .advantage__info {
+    margin-left: 12.5px;
+  }
+  .advantage__title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .advantage__text {
+    font-size: 13px;
+    line-height: 16px;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 790px) {
+  .advantage {
+    margin-top: 40px;
+  }
+  .advantage__item {
+    margin: 12.5px auto;
+  }
+  .advantage__info {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 590px) {
+  .advantage {
+    margin-top: 20px;
+  }
+  .advantage__item {
+    margin: 12.5px auto;
+  }
+  .advantage__image {
+    width: 85px;
+    height: 85px;
+  }
+  .advantage__image img {
+    width: 45px;
+    height: 45px;
+  }
+  .advantage__info {
+    margin-left: 10px;
+  }
+  .advantage__title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .advantage__text {
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 200px;
+  }
+}
