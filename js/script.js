@@ -6,12 +6,15 @@ $(document).ready( () => {
 	})
 
 	// slider
+
 	$('.slider__body').slick({
 		dots: true,
 		appendDots:$('.slider__dots'),
 		infinite: true,
 		autoplay: true,
 		autoplaySpeed: 15000,
+		pauseOnFocus: false,
+		pauseOnHover: false,
 		arrows: false,
 		speed: 500,
 		fade: true,
@@ -31,6 +34,5 @@ $(document).ready( () => {
 			$( 'li', $( this ) ).eq( currentSlide ).addClass( activeClass ).attr( ariaAttribute, false );
 		} );
 	} );
-
 	$( '.slider__body' ).slick();
 });

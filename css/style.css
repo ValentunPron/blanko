@@ -970,14 +970,13 @@ a {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  height: 603px;
   text-align: center;
   align-items: center;
 }
 
 .slider__info {
-  display: inline-block;
   margin: 0 auto;
+  max-width: 576px;
   padding: 20px;
 }
 
@@ -989,7 +988,7 @@ a {
 }
 
 .slider__text {
-  max-width: 576px;
+  margin: 0 auto;
   font-weight: 400;
   font-size: 40px;
   line-height: 48px;
@@ -1011,6 +1010,7 @@ a {
 
 .slider .slick-dots {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 20px;
   justify-content: center;
 }
@@ -1031,4 +1031,115 @@ a {
   width: 16px;
   height: 16px;
   background-color: #Fff;
+}
+
+@media (max-width: 1284px) {
+  .slider {
+    margin: 80px;
+  }
+  .slider__text {
+    max-width: 476px;
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .slider__subtitle {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .slider__subtitle span {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .slider {
+    margin: 70px;
+  }
+  .slider__text {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .slider__subtitle {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .slider__subtitle span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .slider .slider__bg {
+    width: 380px;
+    height: 537px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .slider {
+    margin: 70px;
+  }
+  .slider__info {
+    max-width: 460px;
+  }
+  .slider__image {
+    margin: 0 auto;
+    width: 100px;
+    height: 20px;
+    margin-bottom: 27.5px;
+  }
+  .slider__text {
+    font-size: 29px;
+    line-height: 36px;
+    margin-bottom: 27px;
+  }
+  .slider__subtitle {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .slider__subtitle span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .slider .slider__bg {
+    width: 350px;
+    height: 495px;
+  }
+  .slick-dots {
+    margin-top: 17.5px;
+  }
+}
+
+@media (max-width: 969px) {
+  .slider {
+    margin: 65px;
+  }
+  .slider__info {
+    max-width: 425px;
+  }
+  .slider__image {
+    margin: 0 auto;
+    width: 80px;
+    height: 15px;
+    margin-bottom: 20px;
+  }
+  .slider__text {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  .slider__subtitle {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .slider__subtitle span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .slider .slider__bg {
+    width: 300px;
+    height: 425px;
+  }
+  .slider .slick-dots {
+    margin-top: 10px;
+  }
 }
