@@ -126,7 +126,6 @@ a {
 
 .content {
   margin-top: 81px;
-  flex: 1 1 auto;
 }
 
 .container {
@@ -142,6 +141,7 @@ a {
   width: 100%;
   background-color: #000;
   overflow: hidden;
+  z-index: 5;
 }
 
 .header__body {
@@ -955,8 +955,9 @@ a {
 }
 
 .slider {
-  margin-top: 73px;
-  margin-bottom: 50px;
+  position: relative;
+  margin: 80px;
+  z-index: 1;
 }
 
 .slider__body {
@@ -965,19 +966,23 @@ a {
 }
 
 .slider__item {
+  min-width: 0;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  flex-direction: row;
+  height: 603px;
+  text-align: center;
+  align-items: center;
 }
 
 .slider__info {
-  height: 100%;
-  margin: auto auto;
+  display: inline-block;
+  margin: 0 auto;
   padding: 20px;
-  text-align: center;
 }
 
 .slider__image {
+  margin: 0 auto;
   width: 100px;
   height: 20px;
   margin-bottom: 40px;
@@ -985,6 +990,7 @@ a {
 
 .slider__text {
   max-width: 576px;
+  font-weight: 400;
   font-size: 40px;
   line-height: 48px;
   margin-bottom: 41px;
@@ -997,7 +1003,32 @@ a {
 }
 
 .slider__subtitle span {
+  opacity: .7;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+
+.slider .slick-dots {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.slider .slick-dots button {
+  transition: all 0.2s ease-out;
+  font-size: 0px;
+  width: 16px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.slider .slick-dots li {
+  margin: 0 5px;
+}
+
+.slider .slick-dots li.slick-active button {
+  width: 16px;
+  height: 16px;
+  background-color: #Fff;
 }
