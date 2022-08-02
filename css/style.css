@@ -956,7 +956,7 @@ a {
 
 .slider {
   position: relative;
-  margin: 80px;
+  margin-top: 80px;
   z-index: 1;
 }
 
@@ -1033,50 +1033,9 @@ a {
   background-color: #Fff;
 }
 
-@media (max-width: 1284px) {
-  .slider {
-    margin: 80px;
-  }
-  .slider__text {
-    max-width: 476px;
-    font-size: 34px;
-    line-height: 40px;
-  }
-  .slider__subtitle {
-    font-size: 16px;
-    line-height: 22px;
-  }
-  .slider__subtitle span {
-    font-size: 15px;
-    line-height: 22px;
-  }
-}
-
-@media (max-width: 1180px) {
-  .slider {
-    margin: 70px;
-  }
-  .slider__text {
-    font-size: 30px;
-    line-height: 36px;
-  }
-  .slider__subtitle {
-    font-size: 15px;
-    line-height: 20px;
-  }
-  .slider__subtitle span {
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .slider .slider__bg {
-    width: 380px;
-    height: 537px;
-  }
-}
-
 @media (max-width: 1080px) {
   .slider {
-    margin: 70px;
+    margin-top: 70px;
   }
   .slider__info {
     max-width: 460px;
@@ -1111,7 +1070,7 @@ a {
 
 @media (max-width: 969px) {
   .slider {
-    margin: 65px;
+    margin-top: 60px;
   }
   .slider__info {
     max-width: 425px;
@@ -1141,5 +1100,171 @@ a {
   }
   .slider .slick-dots {
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 790px) {
+  .slider {
+    margin-top: 60px;
+  }
+  .slider__info {
+    padding: 15px;
+    max-width: 400px;
+  }
+  .slider__image {
+    width: 70px;
+    height: 12.5px;
+    margin-bottom: 12.5px;
+  }
+  .slider__text {
+    font-size: 21px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+  .slider__subtitle {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .slider__subtitle span {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .slider .slider__bg {
+    width: 250px;
+    height: 350px;
+  }
+  .slider .slick-dots {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 590px) {
+  .slider {
+    margin-top: 35px;
+  }
+  .slider__info {
+    max-width: 255px;
+  }
+  .slider__image {
+    width: 60px;
+    height: 12px;
+    margin-bottom: 12px;
+  }
+  .slider__text {
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 13px;
+  }
+  .slider__subtitle {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .slider__subtitle span {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .slider .slider__bg {
+    width: 165px;
+    height: 230px;
+  }
+  .slider .slick-dots {
+    margin-top: 5px;
+  }
+  .slider .slick-dots button {
+    width: 14px;
+    height: 14px;
+  }
+  .slider .slick-dots li.slick-active button {
+    width: 14px;
+    height: 14px;
+    background-color: #Fff;
+  }
+}
+
+@media (max-width: 424px) {
+  .slider {
+    margin-top: 30px;
+  }
+  .slider__info {
+    padding: 10px;
+    max-width: 235px;
+  }
+  .slider__image {
+    width: 50px;
+    height: 10px;
+    margin-bottom: 10px;
+  }
+  .slider__text {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+  .slider__subtitle {
+    font-size: 11px;
+    line-height: 12px;
+  }
+  .slider__subtitle span {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .slider .slider__bg {
+    width: 125px;
+    height: 175px;
+  }
+  .slider .slick-dots {
+    margin-top: 1px;
+  }
+  .slider .slick-dots button {
+    width: 12.5px;
+    height: 12.5px;
+  }
+  .slider .slick-dots li.slick-active button {
+    width: 12.5px;
+    height: 12.5px;
+    background-color: #Fff;
+  }
+}
+
+@media (max-width: 374px) {
+  .slider {
+    margin-top: 27.5px;
+  }
+  .slider__info {
+    padding: 8px;
+    max-width: 200px;
+  }
+  .slider__image {
+    width: 45px;
+    height: 8px;
+    margin-bottom: 5px;
+  }
+  .slider__text {
+    font-size: 11px;
+    line-height: 14px;
+    margin-bottom: 7.5px;
+  }
+  .slider__subtitle {
+    font-size: 9px;
+    line-height: 12px;
+  }
+  .slider__subtitle span {
+    font-size: 8px;
+    line-height: 12px;
+  }
+  .slider .slider__bg {
+    width: 115px;
+    height: 160px;
+  }
+  .slider .slick-dots {
+    margin-top: 1px;
+  }
+  .slider .slick-dots button {
+    width: 10px;
+    height: 10px;
+  }
+  .slider .slick-dots li.slick-active button {
+    width: 12px;
+    height: 12px;
+    background-color: #Fff;
   }
 }
