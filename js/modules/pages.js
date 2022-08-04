@@ -1,6 +1,6 @@
 import {getResourse} from '../services/services'
 
-function pages(){
+function pages(http, parent){
 	class pagesItem {
 		constructor(href, src, alt, subtitle, parentSelector) {
 			this.href = href;
@@ -26,30 +26,15 @@ function pages(){
 	const error = document.createElement('h3');
 	error.classList.add('pages__title', 'error-title');
 	error.innerHTML = 'К сожалению, возникла ошибка!';
-	getResourse('http://localhost:3000/landingPages')
+	getResourse(http)
 		.then(data => {
 			data.forEach(({href, src, alt, subtitle}) => {
-				new pagesItem(href, src, alt, subtitle, '.landing__list').addItem();
+				new pagesItem(href, src, alt, subtitle, parent).addItem();
 			}); 
 		}).catch(e => {
 			console.error(e);
-			$('.landing__list').append(error)
+			$(parent).append(error)
 		})
-	getResourse('http://localhost:3000/otherPages')
-		.then(data => {
-			data.forEach(({href, src, alt, subtitle}) => {
-				new pagesItem(href, src, alt, subtitle, '.other__list').addItem();
-			}); 
-		}).catch(e => {
-			console.error(e);
-			$('.other__list').append(error)
-		})
-	// burger
-
-	$('.header__burger').click((event) => {
-		$('.header__burger, .header__menu').toggleClass('active');
-		$('body').toggleClass('lock')
-	})
 }
 
 export default pages;

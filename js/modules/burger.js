@@ -1,6 +1,6 @@
 function burger(parent, parentSelector){
 	$(parent).click((event) => {
-		$(parent, parentSelector).toggleClass('active');
+		$(`${parent}, ${parentSelector}`).toggleClass('active');
 		$('body').toggleClass('lock')
 	})
 }
