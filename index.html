@@ -198,16 +198,19 @@
 								<h3 class="form__title">Sign up for free</h3>
 								<p class="form__text">Your email</p>
 								<input required placeholder="example@mail.com" name="email" type="email"
-									class="forms__input">
+									class="form__input">
 								<p class="form__text">Your password</p>
 								<input required placeholder="*************" name="password" type="password"
-									class="forms__input">
-								<input type="checkbox" name="policy" class="forms__chechbox">
-								<span class="forms__text">I agree to the privacy policy</span>
-								<button class="forms__button button black">Submit</button>
-								<p class="forms__text">Already have an account?
+									class="form__input">
+								<div class="form__policy">
+									<input type="checkbox" name="policy" id="checkbox" class="form__checkbox" />
+									<label for="checkbox"></label>
+									<span class="form__text">I agree to the privacy policy</span>
+								</div>
+								<button class="form__button button black">Submit</button>
+								<p class="form__text form__text-center">Already have an account?
 									<span>
-										<a href="#" class="forms__link">Sign in.</a>
+										<a href="#" class="form__link">Sign in.</a>
 									</span>
 								</p>
 							</div>
