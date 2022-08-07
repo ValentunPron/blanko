@@ -25,7 +25,7 @@ function pages(http, parent){
 	}
 	const error = document.createElement('h3');
 	error.classList.add('pages__title', 'error-title');
-	error.innerHTML = 'К сожалению, возникла ошибка!';
+	error.innerHTML = 'Sorry, an error occurred!';
 	getResourse(http)
 		.then(data => {
 			data.forEach(({href, src, alt, subtitle}) => {
