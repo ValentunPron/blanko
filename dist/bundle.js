@@ -20,16 +20,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./js/modules/pages.js":
-/*!*****************************!*\
-  !*** ./js/modules/pages.js ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _services_services__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../services/services */ \"./js/services/services.js\");\n\r\n\r\nfunction pages(http, parent){\r\n\tclass pagesItem {\r\n\t\tconstructor(href, src, alt, subtitle, parentSelector) {\r\n\t\t\tthis.href = href;\r\n\t\t\tthis.src = src;\r\n\t\t\tthis.alt = alt;\r\n\t\t\tthis.subtitle = subtitle;\r\n\t\t\tthis.parent = document.querySelector(parentSelector);\r\n\t\t}\r\n\r\n\t\taddItem() {\r\n\t\t\tconst element = document.createElement('li');\r\n\t\t\telement.classList.add('pages__item');\r\n\t\t\telement.innerHTML = `\r\n\t\t\t<a href=\"${this.href}\" class=\"pages__link\">\r\n\t\t\t\t<div class=\"pages__bg\">\r\n\t\t\t\t\t<img src=\"${this.src}\" alt=\"${this.alt}\" class=\"pages__image\" width=\"334\" height=\"334\">\r\n\t\t\t\t</div>\r\n\t\t\t\t<h4 class=\"pages__subtitle\">${this.subtitle}</h4>\r\n\t\t\t</a>`;\r\n\t\t\tthis.parent.append(element)\r\n\t\t}\r\n\t}\r\n\tconst error = document.createElement('h3');\r\n\terror.classList.add('pages__title', 'error-title');\r\n\terror.innerHTML = 'Sorry, an error occurred!';\r\n\t(0,_services_services__WEBPACK_IMPORTED_MODULE_0__.getResourse)(http)\r\n\t\t.then(data => {\r\n\t\t\tdata.forEach(({href, src, alt, subtitle}) => {\r\n\t\t\t\tnew pagesItem(href, src, alt, subtitle, parent).addItem();\r\n\t\t\t}); \r\n\t\t}).catch(e => {\r\n\t\t\tconsole.error(e);\r\n\t\t\t$(parent).append(error)\r\n\t\t})\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pages);\n\n//# sourceURL=webpack://blanko/./js/modules/pages.js?");
-
-/***/ }),
-
 /***/ "./js/modules/slider.js":
 /*!******************************!*\
   !*** ./js/modules/slider.js ***!
@@ -46,17 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_pages__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/pages */ \"./js/modules/pages.js\");\n/* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/burger */ \"./js/modules/burger.js\");\n/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/slider */ \"./js/modules/slider.js\");\n\r\n\r\n\r\n\r\n$(document).ready( () => {\r\n\t// slider\r\n\t(0,_modules_pages__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('http://localhost:3000/landingPages', '.landing__list');\r\n\t(0,_modules_pages__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('http://localhost:3000/otherPages', '.other__list');\r\n\t(0,_modules_burger__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('.header__burger', '.header__menu');\r\n\t(0,_modules_slider__WEBPACK_IMPORTED_MODULE_2__[\"default\"])()\r\n});\n\n//# sourceURL=webpack://blanko/./js/script.js?");
-
-/***/ }),
-
-/***/ "./js/services/services.js":
-/*!*********************************!*\
-  !*** ./js/services/services.js ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"getResourse\": () => (/* binding */ getResourse)\n/* harmony export */ });\nconst getResourse = async(url) => {\r\n\tconst res = await fetch(url);\r\n\r\n\tif (!res.ok) {\r\n\t\tthrow new Error(`Could not fetch ${url}, status ${res.status}`);\r\n\t}\r\n\treturn await res.json();\r\n};\r\n\r\n\n\n//# sourceURL=webpack://blanko/./js/services/services.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/burger */ \"./js/modules/burger.js\");\n/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/slider */ \"./js/modules/slider.js\");\n\r\n\r\n\r\n$(document).ready( () => {\r\n\t// slider\r\n\t(0,_modules_burger__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('.header__burger', '.header__menu');\r\n\t(0,_modules_slider__WEBPACK_IMPORTED_MODULE_1__[\"default\"])()\r\n});\n\n//# sourceURL=webpack://blanko/./js/script.js?");
 
 /***/ })
 
