@@ -558,11 +558,6 @@ a {
   margin-top: 62px;
 }
 
-.error-title {
-  color: red;
-  grid-column-end: span 3;
-}
-
 .forms {
   margin: 100px 0 60px 0;
 }
