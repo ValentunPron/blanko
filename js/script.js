@@ -1,8 +1,9 @@
 import burger from './modules/burger';
-import slider from './modules/slider'
+import slider from './modules/slider';
+import scroll from './modules/scroll';
 
 $(document).ready( () => {
-	// slider
+	scroll();
 	burger('.header__burger', '.header__menu');
-	slider()
+	slider();
 });

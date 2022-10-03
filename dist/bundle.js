@@ -20,6 +20,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./js/modules/scroll.js":
+/*!******************************!*\
+  !*** ./js/modules/scroll.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n\r\nfunction scroll() {\r\n\t$('.menu__link').each((index, element) => {\r\n\t\tconsole.log(element.id);\r\n\t\t$(`#${element.id}`).click((e) => {\r\n\t\t\tconsole.log(e.target)\r\n\r\n\t\t\t$('html, body').animate({\r\n\t\t\t\tscrollTop: $(`.${element.id}`).offset().top\r\n\t\t\t}, 1000);\r\n\t\t\tif ($('.header__burger, .header__menu').hasClass('active')) {\r\n\t\t\t\t$('.header__burger, .header__menu').toggleClass('active');\r\n\t\t\t\t$('body').toggleClass('lock')\r\n\t\t\t}\r\n\t\t})\r\n\t}) \r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (scroll);\n\n//# sourceURL=webpack://blanko/./js/modules/scroll.js?");
+
+/***/ }),
+
 /***/ "./js/modules/slider.js":
 /*!******************************!*\
   !*** ./js/modules/slider.js ***!
@@ -36,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/burger */ \"./js/modules/burger.js\");\n/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/slider */ \"./js/modules/slider.js\");\n\r\n\r\n\r\n$(document).ready( () => {\r\n\t// slider\r\n\t(0,_modules_burger__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('.header__burger', '.header__menu');\r\n\t(0,_modules_slider__WEBPACK_IMPORTED_MODULE_1__[\"default\"])()\r\n});\n\n//# sourceURL=webpack://blanko/./js/script.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/burger */ \"./js/modules/burger.js\");\n/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/slider */ \"./js/modules/slider.js\");\n/* harmony import */ var _modules_scroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/scroll */ \"./js/modules/scroll.js\");\n\r\n\r\n\r\n\r\n$(document).ready( () => {\r\n\t(0,_modules_scroll__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n\t(0,_modules_burger__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('.header__burger', '.header__menu');\r\n\t(0,_modules_slider__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n});\n\n//# sourceURL=webpack://blanko/./js/script.js?");
 
 /***/ })
 
