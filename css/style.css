@@ -524,8 +524,9 @@ a {
 
 .pages__list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 17.5px;
 }
 
@@ -543,8 +544,8 @@ a {
 }
 
 .pages__image {
-  width: 334px;
-  height: 334px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .pages__subtitle {
@@ -1843,6 +1844,10 @@ a {
     width: 12.5px;
     height: 12.5px;
     background-color: #Fff;
+  }
+  .pages__list {
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
   }
 }
 
